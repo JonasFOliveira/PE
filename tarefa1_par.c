@@ -19,7 +19,7 @@ int main(){
     while(1){
     printf("Insira um numero inteiro não negativo com até 9 algarismos: ");
     scanf("%d", &n);
-    if (n < 999999999 && n > -1)
+    if (n < 1000000000 && n > -1)
         break;
     }
 
