@@ -20,6 +20,6 @@ int caracteres(){
 
 int main(){
 
-    caracteres();   
+    caracteres();
     return 0;
 }
