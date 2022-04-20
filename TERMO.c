@@ -1,18 +1,28 @@
+/*
+
+####### Programação Estruturada ########
+       Professor: Igor Malheiros
+----------------------------------------
+* Aluno: Jonas Felipe da Fonseca Oliveira
+* Matricula: 20210026948
+
+*/
+
 #include <stdio.h>
 
 int main(){
-    int letras[26] = {0};
-    char TERMO = ' ';
-    int maior = 0;
-
     
-// Inserção da frequencia de aparição das letras nas palavras inseridas
-    while (TERMO != '\n')
-    {
+    int letras[26] = {0};
+    int maior = 0;
+    char TERMO = ' ';
+    
+    // Insercao da frequencia de aparição de letras nas palavras inseridas
+    while(TERMO != '\n'){
         TERMO = getchar();
         letras[TERMO - 'A']++;
     }
-// Verificação de qual foi a maior frequencia de aparição    
+    
+    // Verificacao da maior frequencia
     for(int i = 0; i < 26; i++){
         if (letras[i] > maior)
         maior = letras[i];
