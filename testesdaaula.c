@@ -127,8 +127,9 @@ int frequenciaProf(){
     }
 
 }
+
 int main(){
 
-    frequencia02();
+
     return 0;
 }
