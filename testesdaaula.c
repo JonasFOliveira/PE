@@ -128,8 +128,56 @@ int frequenciaProf(){
 
 }
 
+int contarStr(){
+    int cont = 0;
+    char String[10] = "";
+
+    scanf("%s", String);
+
+    while (*(String+cont) != '\0'){
+        cont++;
+    }
+
+    printf("%d", cont);
+}
+
+int ler_linha(char str[], int n);
+int ler_linha(char str[], int n){
+    //Created by Igor Malheiros 
+    int ch, i = 0;
+
+    while ((ch = getchar()) != '\n')
+    {
+        if (i < n-1)
+        {
+            str[i++] = ch;
+        }
+    }
+
+    str[i] = '\0';
+    
+    return i;
+    
+}
+int contarSpace(){
+
+    char str[100] = "";
+    int n = 100;
+    int cont = 0;
+
+    int i = ler_linha(str, n);
+
+    while(i >= 0){
+        if(*(str+i) == ' ')
+            cont++;
+        i--;
+    }
+
+    printf("%d \n", cont);
+}
 int main(){
 
+    contarSpace();
 
     return 0;
 }
