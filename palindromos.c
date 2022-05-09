@@ -4,7 +4,7 @@ int i = 0;
 int tamanho = 4; //INSERIR TAMANHO DO ARRAY
 
 int main(){
-    int arr[4] = {1,3,3,1};
+    int arr[4] = {1, 2, 1, 2};
 
     if (palindromo(arr) == 1){
         printf("eh palindromo");

@@ -175,9 +175,37 @@ int contarSpace(){
 
     printf("%d \n", cont);
 }
-int main(){
+void strconcat(char str1[100], char str2[4]);
+void strconcat(char str1[100], char str2[4]){
+    int n1, n2;
+    n1 = n2 = 0;
 
-    contarSpace();
+    for(int i = 0; str1[i]; i++){
+        n1++;
+    }
+    for(int i = 0; str2[i]; i++){
+        n2++;
+    }
+
+    for(int i = 0; i < n2; i++){
+        *(str1+n1+i) = *(str2+i);
+    }
+
+}
+int concatenacao(){
+    char str1[100] = "abc";
+    char str2[4] = "def";
+
+    strconcat(str1, str2);
+    printf("Result = %s \n", str1);
+}
+
+
+int main(int argc, char *argv[]){
+
+    for (int i = 0; i < argc; i++){
+        printf("%s\n", argv[i]);
+    }
 
     return 0;
 }
