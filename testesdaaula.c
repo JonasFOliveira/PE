@@ -199,13 +199,31 @@ int concatenacao(){
     strconcat(str1, str2);
     printf("Result = %s \n", str1);
 }
-
-
+/*
 int main(int argc, char *argv[]){
 
     for (int i = 0; i < argc; i++){
         printf("%s\n", argv[i]);
     }
+    return 0;
+}
+*/
 
+/*int main(){
+
+   #ifdef __APLLE__
+    printf("Mac\n");
+    #elif __WINDOWNS__
+    printf("Windowns\n");
+    #elif __linux__
+    printf("linux\n");
+    #else
+    printf("outro\n");
+    #endif
+    return 0;
+}
+*/
+
+int main(){
     return 0;
 }
